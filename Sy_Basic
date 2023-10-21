@@ -1,0 +1,65 @@
+def savings(gross_pay,tax_rate,expenses):
+    
+
+    gross_pay = int(input("Gross Pay: "))
+    tax_rate = float(input("Current Tax Rate (%): "))
+    expenses = int(input("Expenses: "))
+
+    tax_rate /= 100
+
+    math import
+    savings = (gross_pay-math.floor(gross_pay*tax_rate))-expenses
+
+    print("Savings: " + str(savings) + " Centavos")
+    
+    
+def material_waste():
+    total_material = int(input("Total Material: "))
+    material_units = str(input("Material Unit: "))
+    num_jobs = int(input("Number of Jobs: "))
+    job_consumption = int(input("Job Consumption: "))
+
+    material_waste = total_material-(num_jobs*job_consumption)
+
+    print("Remaining Materials: " + str(material_waste) + material_units)
+    
+
+def interest():
+
+    principal = int(input("Principal Amount: "))
+    rate = float(input("Interest Rate per Period: "))
+    periods = int(input("Number of Periods: "))
+
+    rate /= 100
+    inter = principal + (principal*rate*periods)   
+
+    print("Investment value: " + str(inter))
+    
+
+def body_mass_index():
+    weight = float(input("Weight (lbs): "))
+    height_ft = int(input("Height (ft): "))
+    height_in = int(input("Remaining Height (in): "))
+
+    weight /= 2.2
+    height = (height_ft*12)+height_in
+    height *= 0.0254
+    
+    bmi = weight/(height*height)
+    if bmi>30:
+        bmi_category = str("You are obese")
+    elif bmi>25:
+        bmi_category = str("You are overweight")
+    elif bmi>18:
+        bmi_category = str("You are normal weight")
+    else:
+        bmi_category = str("You are underweight")
+
+     print("Weight (kg): " + str(weight) + "Height (m): " + str(height) + "Body Mass Index: " + str(bmi) + "BMI Category: " + bmi_category)
+    
+    
+
+
+
+
+
